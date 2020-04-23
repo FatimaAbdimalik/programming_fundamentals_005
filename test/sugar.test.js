@@ -272,7 +272,7 @@ describe.only("Object.addAll", () => {
   });
 });
 
-describe("Object.find", () => {
+describe.only("Object.find", () => {
   test("returns the found value if the object contains a value that matches the matcher function", () => {
     function matcherFunc(val) {
       return val > 99;
@@ -308,7 +308,7 @@ describe("Object.find", () => {
   });
 });
 
-describe("Object.every", () => {
+describe.only("Object.every", () => {
   test("returns true if all values in the object pass the condition of the matcher the function", () => {
     function matcherFunc(val) {
       return val > 99;
@@ -344,7 +344,7 @@ describe("Object.every", () => {
   });
 });
 
-describe("Object.some", () => {
+describe.only("Object.some", () => {
   test("returns true if one or more values in the object pass the condition of the matcher the function", () => {
     function matcherFunc(val) {
       return val > 99;
